@@ -7,7 +7,7 @@ SENTIMI is a mental wellness web application that offers compassionate, CBT-base
 ## ✨ Features
 
 - 🤖 **AI Therapist Chatbot**: Provides therapeutic responses rooted in CBT.
-- 🧠 **Powered by GPT-2**: Fine-tuned to understand mental health prompts and provide structured, helpful guidance.
+- 🧠 **Powered by Distilbert and GPT-2**: Fine-tuned to understand mental health prompts and provide structured, helpful guidance.
 - 💬 **Natural Conversations**: Talk freely with the chatbot just like you would with a real therapist.
 - 🔐 **Authentication System**: Sign up and log in securely to access your personalized dashboard.
 - 📅 **Dashboard**: View past sessions, mood logs, and progress summaries.
