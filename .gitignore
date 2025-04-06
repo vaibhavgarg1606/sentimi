@@ -24,3 +24,93 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# JupyterNotebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Jupyter Notebook outputs
+*.ipynb_output/
+*.ipynb_output/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+.Python
+develop-eggs/
+build/
+eggs/
+.eggs/
+
+# Python virtual env
+venv/
+.venv/
+
+### Dependecies ###
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+#poetry
+poetry.lock
+
+# Log files
+*.log
+logs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.production
+secrets.json
+env/
+ENV/
+env.bak/
+
+# VisualStudioCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.history/
+*.vsix
+.history
+.ionide
+.idea/
+.DS_Store
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
