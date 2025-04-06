@@ -14,7 +14,7 @@ def cleansing(text):
 
 
 typo_map = {"dont": "don't", "cant": "can't", "its": "it's"}
-file = os.path.join("data", "empatheticdialogues", "raw", "train.csv")
+file = os.path.join("dataset", "empatheticdialogues", "raw", "train.csv")
 try:
     train_df = pd.read_csv(file, on_bad_lines="skip")
 except FileNotFoundError:
@@ -44,7 +44,7 @@ conversation_df = pd.DataFrame(conversation)
 # conversation_df = pd.concat([train_df, conversation_df], axis=1)
 
 try:
-    file = os.path.join("data", "empatheticdialogues", "preprocessed", "conversation.csv")
+    file = os.path.join("dataset", "empatheticdialogues", "preprocessed", "conversation.csv")
     conversation_df.to_csv(file, index=False)
 except Exception as e:
     print(f"Error {e} while saving {file}")

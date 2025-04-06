@@ -5,7 +5,7 @@ from transformers import DistilBertTokenizerFast, DistilBertForSequenceClassific
 import torch
 
 le = LabelEncoder()
-file = os.path.join("data", "empatheticdialogues", "preprocessed", "conversation.csv")
+file = os.path.join("dataset", "empatheticdialogues", "preprocessed", "conversation.csv")
 try:
     df = pd.read_csv(file)
 except FileNotFoundError:
@@ -15,7 +15,7 @@ except Exception as e:
 
 df["labels"] = le.fit_transform(df["emotion"])
 
-model_path = "./distilbert-emotion"
+model_path = os.path.join("model", "distilbert-emotion")
 tokenizer = DistilBertTokenizerFast.from_pretrained(model_path)
 model = DistilBertForSequenceClassification.from_pretrained(model_path)
 

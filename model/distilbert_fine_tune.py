@@ -6,7 +6,7 @@ from datasets import Dataset
 
 
 # Loading conversation csv file
-file = os.path.join("data", "empatheticdialogues", "preprocessed", "conversation.csv")
+file = os.path.join("dataset", "empatheticdialogues", "preprocessed", "conversation.csv")
 try:
     df = pd.read_csv(file)
 except FileNotFoundError:
@@ -34,7 +34,7 @@ tokenize_dataset = tokenize_dataset.train_test_split(test_size=0.20)
 num_labels = len(le.classes_)
 model = DistilBertForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels=num_labels)
 training_args = TrainingArguments(
-    output_dir="./distilbert-emotion",
+    output_dir="./model/distilbert-emotion",
     evaluation_strategy="epoch",
     save_strategy="epoch",
     per_device_train_batch_size=16,
@@ -54,6 +54,6 @@ trainer = Trainer(
 trainer.train()
 
 # Saving model
-model_path = "./distilbert-emotion"
+model_path = os.path.join("model", "distilbert-emotion")
 model.save_pretrained(model_path)
 tokenizer.save_pretrained(model_path)
