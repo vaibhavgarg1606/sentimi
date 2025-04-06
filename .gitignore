@@ -114,3 +114,6 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 *.lnk
+
+# Model
+model/distilbert-emotion
