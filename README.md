@@ -17,31 +17,35 @@ SENTIMI is a mental wellness web application that offers compassionate, CBT-base
 
 ## 🚀 Tech Stack
 
-| Technology   | Description                                |
-|--------------|--------------------------------------------|
-| React        | Frontend UI Framework                      |
-| GPT-2        | AI Model (fine-tuned for CBT conversations)|
-| Node.js      | Backend API Server                         |
-| HTML/CSS     | Styling and Layout                         |
+| Technology | Description                                 |
+| ---------- | ------------------------------------------- |
+| React      | Frontend UI Framework                       |
+| GPT-2      | AI Model (fine-tuned for CBT conversations) |
+| Node.js    | Backend API Server                          |
+| HTML/CSS   | Styling and Layout                          |
 
 ---
 
 ## 📷 UI Snapshots
 
-
 ### 🏠 Home Page
+
 ![Home Page](./screenshots/home.png)
 
 ### 💬 Chatbot Page
+
 ![Chatbot](./screenshots/chatbot.png)
 
 ### 🔐 Login Page
+
 ![Login](./screenshots/login.png)
 
 ### 📝 Signup Page
+
 ![Signup](./screenshots/signup.png)
 
 ### 📊 Dashboard
+
 ![Dashboard](./screenshots/dashboard.png)
 
 ---
@@ -52,13 +56,15 @@ SENTIMI is a mental wellness web application that offers compassionate, CBT-base
 SENTIMI/
 ├── public/
 ├── src/
-│   ├── components/      # Chat, Navbar, Auth components
-│   ├── pages/           # Home, Chatbot, Login, Signup, Dashboard
-│   ├── assets/          # Images, styling
+│   ├── components/             # Chat, Navbar, Auth components
+│   ├── pages/                  # Home, Chatbot, Login, Signup, Dashboard
+│   ├── assets/                 # Images, styling
 │   ├── App.js
 │   ├── index.js
-├── backend/ (optional)  # GPT-2 API or authentication server
-├── model/          # Fine-tuned GPT-2 files and scripts
+├── backend/ (optional)         # GPT-2 API or authentication server
+├── model/                      # Fine-tuned GPT-2 files and scripts
+├── dataset/
+|   ├── empatheticdialogues/    # Open source Empathetic Dialogues dataset
 ├── README.md
 ```
 
@@ -76,6 +82,7 @@ SENTIMI/
 ## 🛠️ Installation
 
 ### Frontend Setup
+
 ```bash
 git clone https://github.com/yourusername/sentimi.git
 cd sentimi
@@ -84,6 +91,7 @@ npm start
 ```
 
 ### Backend Setup (for GPT-2 API)
+
 no setp right now
 
 ---
