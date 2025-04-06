@@ -21,6 +21,7 @@ SENTIMI is a mental wellness web application that offers compassionate, CBT-base
 | ---------- | ------------------------------------------- |
 | React      | Frontend UI Framework                       |
 | GPT-2      | AI Model (fine-tuned for CBT conversations) |
+| DistilBERT | Classfication model for emotional analysis  |
 | Node.js    | Backend API Server                          |
 | HTML/CSS   | Styling and Layout                          |
 
@@ -47,6 +48,34 @@ SENTIMI is a mental wellness web application that offers compassionate, CBT-base
 ### 📊 Dashboard
 
 ![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## 🚀 How to Run the distilbert-emotion Model
+
+This project uses a fine-tuned distilbert-base-uncased model for emotion classification. To run the model locally:
+
+1. Install dependencies
+   ```
+   pip install transformers torch
+   ```
+2. Then simply run:
+   ```
+   python model/run_distilbert_emotion.py
+   ```
+3. Wait a few seconds for the model to download. Once it's ready, you’ll see:
+   ```
+   >>
+   ```
+4. Type your input message after the prompt. Example:
+   ```
+   >> I am feeling stressed today
+   Predicted Emotion: anxious
+   >> I am feeling good
+   Predicted Emotion: confident
+   >> He feels awful
+   Predicted Emotion: guilty
+   ```
 
 ---
 
