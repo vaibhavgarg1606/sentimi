@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# 🧠 SENTIMI – Your AI Therapist Chatbot
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SENTIMI is a mental wellness web application that offers compassionate, CBT-based (Cognitive Behavioral Therapy) conversations through an AI chatbot. Built with React on the frontend and powered by a fine-tuned GPT-2 model on the backend, SENTIMI helps users identify, understand, and reframe negative thought patterns in a safe and supportive environment.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- 🤖 **AI Therapist Chatbot**: Provides therapeutic responses rooted in CBT.
+- 🧠 **Powered by GPT-2**: Fine-tuned to understand mental health prompts and provide structured, helpful guidance.
+- 💬 **Natural Conversations**: Talk freely with the chatbot just like you would with a real therapist.
+- 🔐 **Authentication System**: Sign up and log in securely to access your personalized dashboard.
+- 📅 **Dashboard**: View past sessions, mood logs, and progress summaries.
+- 💡 **Daily CBT Tips**: Get daily motivational prompts and therapeutic insights.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Tech Stack
 
-### `npm test`
+| Technology   | Description                                |
+|--------------|--------------------------------------------|
+| React        | Frontend UI Framework                      |
+| GPT-2        | AI Model (fine-tuned for CBT conversations)|
+| Node.js      | Backend API Server                         |
+| HTML/CSS     | Styling and Layout                         |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 📷 UI Snapshots
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🏠 Home Page
+![Home Page](./screenshots/home.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💬 Chatbot Page
+![Chatbot](./screenshots/chatbot.png)
 
-### `npm run eject`
+### 🔐 Login Page
+![Login](./screenshots/login.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📝 Signup Page
+![Signup](./screenshots/signup.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📊 Dashboard
+![Dashboard](./screenshots/dashboard.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📂 Project Structure
 
-## Learn More
+```
+SENTIMI/
+├── public/
+├── src/
+│   ├── components/      # Chat, Navbar, Auth components
+│   ├── pages/           # Home, Chatbot, Login, Signup, Dashboard
+│   ├── assets/          # Images, styling
+│   ├── App.js
+│   ├── index.js
+├── backend/ (optional)  # GPT-2 API or authentication server
+├── model/          # Fine-tuned GPT-2 files and scripts
+├── README.md
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🧠 How It Works
 
-### Code Splitting
+1. The user interacts with a chatbot through a React frontend.
+2. Messages are sent to a backend server hosting a fine-tuned GPT-2 model.
+3. The model generates CBT-based therapeutic responses.
+4. User history and mood logs are optionally saved and shown in the dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🛠️ Installation
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Frontend Setup
+```bash
+git clone https://github.com/yourusername/sentimi.git
+cd sentimi
+npm install
+npm start
+```
 
-### Making a Progressive Web App
+### Backend Setup (for GPT-2 API)
+no setp right now
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🚀 Future Enhancements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Mood tracking and journaling features
+- Therapist feedback integration
+- Emotion detection and sentiment analysis
+- Data export and report generation
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## ❤️ Contributing
 
-### `npm run build` fails to minify
+Contributions are welcome! Feel free to fork the repo, make your changes, and submit a pull request. For major changes, please open an issue first to discuss what you’d like to do.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## 📄 License
+
+MIT License © 2025 [Your Name]
+
+---
+
+> **Disclaimer:** SENTIMI is an AI-powered support tool and is not a substitute for licensed mental health professionals. For serious concerns, always seek professional help.
