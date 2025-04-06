@@ -117,3 +117,4 @@ $RECYCLE.BIN/
 
 # Model
 model/distilbert-emotion
+model/upload_model.py

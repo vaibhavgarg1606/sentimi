@@ -15,9 +15,9 @@ except Exception as e:
 
 df["labels"] = le.fit_transform(df["emotion"])
 
-model_path = os.path.join("model", "distilbert-emotion")
-tokenizer = DistilBertTokenizerFast.from_pretrained(model_path)
-model = DistilBertForSequenceClassification.from_pretrained(model_path)
+# model_path = os.path.join("model", "distilbert-emotion")      # if the model is saved locally on your machine
+tokenizer = DistilBertTokenizerFast.from_pretrained("LakshSetia/distilbert-emotion")    # downloading model from huggingface hub
+model = DistilBertForSequenceClassification.from_pretrained("LakshSetia/distilbert-emotion")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model.to(device)
