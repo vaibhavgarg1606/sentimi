@@ -140,10 +140,5 @@ Contributions are welcome! Feel free to fork the repo, make your changes, and su
 
 ---
 
-## 📄 License
-
-MIT License © 2025 [Your Name]
-
----
 
 > **Disclaimer:** SENTIMI is an AI-powered support tool and is not a substitute for licensed mental health professionals. For serious concerns, always seek professional help.
